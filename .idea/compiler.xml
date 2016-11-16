@@ -28,7 +28,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="workstation.messageservice.server.host" target="1.8" />
-      <module name="workstation.messageservice.services" target="1.5" />
+      <module name="workstation.messageservice.services" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

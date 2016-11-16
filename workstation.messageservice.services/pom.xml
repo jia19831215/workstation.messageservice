@@ -14,4 +14,12 @@
         <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
         <springboot.version></springboot.version>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>4.3.3.RELEASE</version>
+        </dependency>
+    </dependencies>
 </project>
