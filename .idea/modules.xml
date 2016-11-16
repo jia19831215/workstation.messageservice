@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/workstation.messageservice.server.host/workstation.messageservice.server.host.iml" filepath="$PROJECT_DIR$/workstation.messageservice.server.host/workstation.messageservice.server.host.iml" />
+      <module fileurl="file://$PROJECT_DIR$/workstation.messageservice.services/workstation.messageservice.services.iml" filepath="$PROJECT_DIR$/workstation.messageservice.services/workstation.messageservice.services.iml" />
     </modules>
   </component>
 </project>

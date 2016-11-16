@@ -23,10 +23,12 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="workstation.messageservice.server.host" />
+        <module name="workstation.messageservice.services" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="workstation.messageservice.server.host" target="1.5" />
+      <module name="workstation.messageservice.server.host" target="1.8" />
+      <module name="workstation.messageservice.services" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

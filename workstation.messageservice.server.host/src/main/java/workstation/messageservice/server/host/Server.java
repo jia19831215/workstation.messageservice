@@ -5,6 +5,6 @@ package workstation.messageservice.server.host;
  */
 public class Server {
     public static void main(String[] args) {
-        
+
     }
 }
