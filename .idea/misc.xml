@@ -8,6 +8,7 @@
       <list>
         <option value="$PROJECT_DIR$/workstation.messageservice.server.host/pom.xml" />
         <option value="$PROJECT_DIR$/workstation.messageservice.services/pom.xml" />
+        <option value="$PROJECT_DIR$/workstation.messageservice.config.server/pom.xml" />
       </list>
     </option>
   </component>
