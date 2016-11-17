@@ -10,14 +10,14 @@ import workstation.messageservice.services.TestService;
  */
 public class TestServiceTest {
     @Test
-    public void testGetAdDirectoryById() {
+    public void testTestService() {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath*:spring/*.xml");
         context.start();
-
 
         TestService service = context.getBean(TestService.class);
 
         String ver = service.getVersion();
 
+        Assert.assertEquals("1.0.0.0", ver);
     }
 }

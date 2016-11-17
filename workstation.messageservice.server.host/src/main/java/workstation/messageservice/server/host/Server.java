@@ -21,7 +21,7 @@ public class Server {
         try {
             SpringApplication.run(Server.class, args);
 
-            System.out.println("服务启动");
+            System.out.println("Server start completed...");
 
             System.in.read();
         } catch (Exception ce) {
