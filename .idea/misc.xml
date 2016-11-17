@@ -9,6 +9,10 @@
         <option value="$PROJECT_DIR$/workstation.messageservice.server.host/pom.xml" />
         <option value="$PROJECT_DIR$/workstation.messageservice.services/pom.xml" />
         <option value="$PROJECT_DIR$/workstation.messageservice.config.server/pom.xml" />
+        <option value="$PROJECT_DIR$/workstation.messageservice.dao/pom.xml" />
+        <option value="$PROJECT_DIR$/workstation.messageservice.dao.impl/pom.xml" />
+        <option value="$PROJECT_DIR$/workstation.messageservice.services.impl/pom.xml" />
+        <option value="$PROJECT_DIR$/workstation.messageservice.models/pom.xml" />
       </list>
     </option>
   </component>
