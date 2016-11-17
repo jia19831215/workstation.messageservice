@@ -38,6 +38,13 @@
       <element id="module-output" name="workstation.messageservice.services" />
       <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.2" />
       <element id="module-output" name="workstation.messageservice.services.impl" />
+      <element id="file-copy" path="$PROJECT_DIR$/workstation.messageservice.server.host/libs/dubbo-2.8.4a.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/workstation.messageservice.server.host/libs/workstation.core.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/workstation.messageservice.server.host/libs/zkclient-0.8.1.jar" />
+      <element id="file-copy" path="$PROJECT_DIR$/workstation.messageservice.server.host/libs/workstation.spring.util.jar" />
+      <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.21" />
+      <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.3" />
+      <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.8.3" />
     </root>
   </artifact>
 </component>
