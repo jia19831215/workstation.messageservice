@@ -23,6 +23,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="workstation.messageservice.config.server" />
+        <module name="workstation.messageservice.core" />
         <module name="workstation.messageservice.dao" />
         <module name="workstation.messageservice.dao.impl" />
         <module name="workstation.messageservice.models" />
@@ -33,12 +34,13 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="workstation.messageservice.config.server" target="1.5" />
-      <module name="workstation.messageservice.dao" target="1.5" />
-      <module name="workstation.messageservice.dao.impl" target="1.5" />
-      <module name="workstation.messageservice.models" target="1.5" />
+      <module name="workstation.messageservice.core" target="1.8" />
+      <module name="workstation.messageservice.dao" target="1.8" />
+      <module name="workstation.messageservice.dao.impl" target="1.8" />
+      <module name="workstation.messageservice.models" target="1.8" />
       <module name="workstation.messageservice.server.host" target="1.8" />
       <module name="workstation.messageservice.services" target="1.8" />
-      <module name="workstation.messageservice.services.impl" target="1.5" />
+      <module name="workstation.messageservice.services.impl" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

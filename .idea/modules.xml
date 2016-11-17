@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/workstation.messageservice.config.server/workstation.messageservice.config.server.iml" filepath="$PROJECT_DIR$/workstation.messageservice.config.server/workstation.messageservice.config.server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/workstation.messageservice.core/workstation.messageservice.core.iml" filepath="$PROJECT_DIR$/workstation.messageservice.core/workstation.messageservice.core.iml" />
       <module fileurl="file://$PROJECT_DIR$/workstation.messageservice.dao/workstation.messageservice.dao.iml" filepath="$PROJECT_DIR$/workstation.messageservice.dao/workstation.messageservice.dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/workstation.messageservice.dao.impl/workstation.messageservice.dao.impl.iml" filepath="$PROJECT_DIR$/workstation.messageservice.dao.impl/workstation.messageservice.dao.impl.iml" />
       <module fileurl="file://$PROJECT_DIR$/workstation.messageservice.models/workstation.messageservice.models.iml" filepath="$PROJECT_DIR$/workstation.messageservice.models/workstation.messageservice.models.iml" />
