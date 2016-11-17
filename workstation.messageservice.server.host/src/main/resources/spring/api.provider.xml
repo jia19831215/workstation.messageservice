@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xmlns:context="http://www.springframework.org/schema/context"
+
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+       ">
+
+    <!--xmlns:tx="http://www.springframework.org/schema/tx"-->
+    <!--http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd-->
+
+    <!--<context:component-scan base-package="qumeiba.dmsapi.basic.dao.impl" use-default-filters="true"/>-->
+    <!--<context:property-placeholder location="META-INF/db.properties"></context:property-placeholder>-->
+
+    <!--<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">-->
+        <!--<property name="username" value="${connection.username}"></property>-->
+        <!--<property name="password" value="${connection.password}"></property>-->
+        <!--<property name="url" value="${connection.url}"></property>-->
+        <!--<property name="driverClassName" value="${connection.driverClassName}"></property>-->
+        <!--&lt;!&ndash; <property name="initialSize" value="${dbcp.initialSize}"></property> &ndash;&gt;-->
+        <!--<property name="maxActive" value="${connection.maxActive}"></property>-->
+        <!--<property name="maxIdle" value="${connection.maxIdle}"></property>-->
+        <!--<property name="minIdle" value="${connection.minIdle}"></property>-->
+        <!--<property name="maxWait" value="${connection.maxWait}"></property>-->
+        <!--<property name="removeAbandoned" value="${connection.removeAbandoned}"></property>-->
+        <!--<property name="removeAbandonedTimeout" value="${connection.removeAbandonedTimeout}"></property>-->
+        <!--<property name="logAbandoned" value="${connection.logAbandoned}"></property>-->
+        <!--<property name="minEvictableIdleTimeMillis" value="${connection.minEvictableIdleTimeMillis}"></property>-->
+        <!--<property name="timeBetweenEvictionRunsMillis" value="${connection.timeBetweenEvictionRunsMillis}"></property>-->
+        <!--<property name="numTestsPerEvictionRun" value="${connection.numTestsPerEvictionRun}"></property>-->
+    <!--</bean>-->
+
+    <!-- 配置事务 -->
+    <!--<bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">-->
+        <!--<property name="dataSource" ref="dataSource"/>-->
+    <!--</bean>-->
+
+    <!--<tx:annotation-driven transaction-manager="txManager"/>-->
+
+    <!-- 配置 mybatis -->
+    <!--<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">-->
+        <!--<property name="dataSource" ref="dataSource"/>-->
+        <!--<property name="configLocation" value="classpath:META-INF/mybatis/mybatis-config.xml"/>-->
+    <!--</bean>-->
+
+    <!--<bean class="org.mybatis.spring.SqlSessionTemplate">-->
+        <!--<constructor-arg index="0" ref="sqlSessionFactory"></constructor-arg>-->
+    <!--</bean>-->
+
+    <!--<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">-->
+        <!--<property name="basePackage" value="qumeiba.dmsapi.basic.mapper"/>-->
+    <!--</bean>-->
+
+    <dubbo:application name="workstation-messageservice-server" owner="programmer" logger="log4j" organization="dubbox"/>
+
+    <dubbo:registry protocol="zookeeper" address="127.0.0.1:2181"/>
+
+    <dubbo:protocol name="dubbo" port="20880"/>
+
+    <!-- use tomcat server -->
+    <!--<dubbo:protocol name="rest" port="8888" threads="500" contextpath="services" server="tomcat" accepts="500" -->
+    <!--extension="com.alibaba.dubbo.rpc.protocol.rest.support.LoggingFilter"/>-->
+    <!--<dubbo:provider filter="ExceptionFilter"/>-->
+
+    <!--<dubbo:service filter="CustomExceptionFilter" interface="services.UserService" ref="userService" protocol="dubbo" />-->
+
+    <dubbo:service interface="workstation.messageservice.services.TestService" ref="testService"
+                   protocol="dubbo" />
+
+    <!--<dubbo:service interface="yjmyzz.dubbo.demo.api.UserRestService" ref="userRestService" protocol="rest"  validation="true"/>-->
+
+
+    <bean id="testService" class="workstation.messageservice.services.impl.TestServiceImpl"/>
+
+    <!--<bean id="userRestService" class="yjmyzz.dubbo.demo.provider.UserRestServiceImpl">-->
+    <!--<property name="userService" ref="userService"/>-->
+    <!--</bean>-->
+</beans>

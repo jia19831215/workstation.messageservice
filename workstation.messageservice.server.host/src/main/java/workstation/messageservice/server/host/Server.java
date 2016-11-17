@@ -11,9 +11,11 @@ import org.springframework.context.annotation.ImportResource;
 
 @ComponentScan
 @EnableAutoConfiguration
-@ImportResource({ "classpath:" })
+@ImportResource({ "classpath:spring/api.provider.xml" })
 public class Server {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         SpringApplication.run(Server.class, args);
+
+        System.in.read();
     }
 }

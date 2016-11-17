@@ -7,4 +7,8 @@ import workstation.messageservice.services.TestService;
  */
 public class TestServiceImpl implements TestService {
 
+    @Override
+    public String getVersion() {
+        return "1.0.0.0";
+    }
 }

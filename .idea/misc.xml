@@ -14,6 +14,7 @@
         <option value="$PROJECT_DIR$/workstation.messageservice.services.impl/pom.xml" />
         <option value="$PROJECT_DIR$/workstation.messageservice.models/pom.xml" />
         <option value="$PROJECT_DIR$/workstation.messageservice.core/pom.xml" />
+        <option value="$PROJECT_DIR$/workstation.messageservice.server.host.test/pom.xml" />
       </list>
     </option>
   </component>
