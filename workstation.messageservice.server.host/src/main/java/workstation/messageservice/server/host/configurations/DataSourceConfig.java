@@ -9,7 +9,7 @@ import org.springframework.core.env.Environment;
 import javax.sql.DataSource;
 
 /**
- * Created by Administrator on 2016/11/18.
+ * 数据库配置
  */
 
 @Configuration
@@ -34,8 +34,12 @@ public class DataSourceConfig {
     @Autowired
     private Environment env;
 
+    /**
+     * MYSQL 数据源
+     * @return
+     */
     @Bean(name = MYSQL)
-    public DataSource dataSource() {
+    public DataSource mySqlDataSource() {
         BasicDataSource dataSource = new BasicDataSource();
 
         dataSource.setUrl(env.getProperty(String.format(URL, MYSQL)));

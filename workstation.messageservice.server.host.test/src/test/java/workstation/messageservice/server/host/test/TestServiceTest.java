@@ -18,6 +18,6 @@ public class TestServiceTest {
 
         String ver = service.getVersion();
 
-        Assert.assertEquals("1.0.0.0", ver);
+        Assert.assertEquals("1.0", ver);
     }
 }

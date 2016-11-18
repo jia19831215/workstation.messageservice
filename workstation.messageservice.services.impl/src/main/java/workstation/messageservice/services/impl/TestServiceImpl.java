@@ -1,6 +1,8 @@
 package workstation.messageservice.services.impl;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import workstation.messageservice.dao.PublishInfoDao;
 import workstation.messageservice.services.TestService;
 
 /**
@@ -9,8 +11,12 @@ import workstation.messageservice.services.TestService;
 
 public class TestServiceImpl implements TestService {
 
+    @Autowired
+    private PublishInfoDao publishInfoDao;
+
     @Override
     public String getVersion() {
-        return "1.0.0.0";
+
+        return publishInfoDao.getVer();
     }
 }
