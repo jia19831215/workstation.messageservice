@@ -11,7 +11,5 @@ public interface Pipeline {
 
     List<Handle> getHandles();
 
-    void setHandles(List<Handle> handles);
-
     List<HandleResult> publish(ActionContext context);
 }

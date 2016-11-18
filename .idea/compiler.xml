@@ -26,6 +26,7 @@
         <module name="workstation.messageservice.core" />
         <module name="workstation.messageservice.dao" />
         <module name="workstation.messageservice.dao.impl" />
+        <module name="workstation.messageservice.mappers" />
         <module name="workstation.messageservice.models" />
         <module name="workstation.messageservice.server.host" />
         <module name="workstation.messageservice.server.host.test" />
@@ -38,6 +39,7 @@
       <module name="workstation.messageservice.core" target="1.8" />
       <module name="workstation.messageservice.dao" target="1.8" />
       <module name="workstation.messageservice.dao.impl" target="1.8" />
+      <module name="workstation.messageservice.mappers" target="1.8" />
       <module name="workstation.messageservice.models" target="1.8" />
       <module name="workstation.messageservice.server.host" target="1.8" />
       <module name="workstation.messageservice.server.host.test" target="1.8" />

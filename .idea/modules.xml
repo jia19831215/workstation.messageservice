@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/workstation.messageservice.core/workstation.messageservice.core.iml" filepath="$PROJECT_DIR$/workstation.messageservice.core/workstation.messageservice.core.iml" />
       <module fileurl="file://$PROJECT_DIR$/workstation.messageservice.dao/workstation.messageservice.dao.iml" filepath="$PROJECT_DIR$/workstation.messageservice.dao/workstation.messageservice.dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/workstation.messageservice.dao.impl/workstation.messageservice.dao.impl.iml" filepath="$PROJECT_DIR$/workstation.messageservice.dao.impl/workstation.messageservice.dao.impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/workstation.messageservice.mappers/workstation.messageservice.mappers.iml" filepath="$PROJECT_DIR$/workstation.messageservice.mappers/workstation.messageservice.mappers.iml" />
       <module fileurl="file://$PROJECT_DIR$/workstation.messageservice.models/workstation.messageservice.models.iml" filepath="$PROJECT_DIR$/workstation.messageservice.models/workstation.messageservice.models.iml" />
       <module fileurl="file://$PROJECT_DIR$/workstation.messageservice.server.host/workstation.messageservice.server.host.iml" filepath="$PROJECT_DIR$/workstation.messageservice.server.host/workstation.messageservice.server.host.iml" />
       <module fileurl="file://$PROJECT_DIR$/workstation.messageservice.server.host.test/workstation.messageservice.server.host.test.iml" filepath="$PROJECT_DIR$/workstation.messageservice.server.host.test/workstation.messageservice.server.host.test.iml" />

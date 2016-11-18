@@ -2,6 +2,7 @@ package workstation.messageservice.core.objectpipeline;
 
 import workstation.messageservice.core.objectpipeline.handles.Handle;
 
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -18,9 +19,8 @@ public class ObjectPipeline implements Pipeline {
         return this.handles;
     }
 
-    @Override
-    public void setHandles(List<Handle> handles) {
-        this.handles = handles;
+    public ObjectPipeline() {
+        this.handles = new ArrayList<Handle>();
     }
 
     @Override

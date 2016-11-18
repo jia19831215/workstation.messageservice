@@ -2,11 +2,9 @@ package workstation.messageservice.server.host;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ImportResource;
 import workstation.core.utils.StringUtil;
-import workstation.spring.util.SpringContextUtil;
 
 import java.io.FileWriter;
 
