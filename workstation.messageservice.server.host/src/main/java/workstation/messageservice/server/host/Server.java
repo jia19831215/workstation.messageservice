@@ -1,6 +1,5 @@
 package workstation.messageservice.server.host;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.ApplicationContext;
@@ -24,8 +23,6 @@ public class Server {
 
         try {
             SpringApplication.run(Server.class, args);
-
-            ApplicationContext context = SpringContextUtil.getContext();
 
             System.out.println("Server start completed...");
 
