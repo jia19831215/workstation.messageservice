@@ -2,6 +2,7 @@ package workstation.messageservice.server.host.configurations;
 
 import org.apache.commons.dbcp.BasicDataSource;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
@@ -34,8 +35,16 @@ public class DataSourceConfig {
     @Autowired
     private Environment env;
 
+    public static String CURRENT_DATASOURCE_TYPE;
+
+    @Value("${current.datasource}")
+    public void setCurrentDataSourceType(String type) {
+        CURRENT_DATASOURCE_TYPE = type;
+    }
+
     /**
      * MYSQL 数据源
+     *
      * @return
      */
     @Bean(name = MYSQL)
