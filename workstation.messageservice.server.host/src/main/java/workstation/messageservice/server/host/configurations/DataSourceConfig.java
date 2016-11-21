@@ -16,7 +16,7 @@ import javax.sql.DataSource;
 @Configuration
 public class DataSourceConfig {
 
-    private static final String MYSQL = "mysql";
+    public static final String MYSQL = "mysql";
     private static final String URL = "datasource.%s.url";
     private static final String USERNAME = "datasource.%s.username";
     private static final String PASSWORD = "datasource.%s.password";

@@ -5,6 +5,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 import workstation.messageservice.dao.PublishInfoDao;
 
+import java.io.DataOutputStream;
 import java.util.List;
 import java.util.Map;
 
@@ -22,6 +23,7 @@ public class PublishInfoDaoImpl implements PublishInfoDao {
     public String getVer() {
 
         List<Map<String, Object>> data = jdbcTemplate.queryForList("SELECT * FROM cant");
+
 
         return "1.0";
     }

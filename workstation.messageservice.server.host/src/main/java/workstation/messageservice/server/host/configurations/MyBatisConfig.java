@@ -17,7 +17,7 @@ import javax.sql.DataSource;
 public class MyBatisConfig implements TransactionManagementConfigurer {
 
     @Autowired
-    @Qualifier("mysql")
+    @Qualifier(DataSourceConfig.MYSQL)
     DataSource dataSource;
 
     @Override
